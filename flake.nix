@@ -26,6 +26,7 @@
       modules = base_modules ++ [
         ./hosts/pc/boot.nix
         ./hosts/pc/zfs.nix
+        ./hosts/pc/nvidia.nix
         lanzaboote.nixosModules.lanzaboote
       ];
     };
