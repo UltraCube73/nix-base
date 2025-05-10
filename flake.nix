@@ -11,8 +11,16 @@
   outputs = inputs@{ self, nixpkgs, lanzaboote, home-manager, ... }:
   let
     base_modules = [
-      ./os-base/configuration.nix
+      ./os-base/bluetooth.nix
+      ./os-base/boot.nix
+      ./os-base/i18n.nix
       ./os-base/kde.nix
+      ./os-base/network.nix
+      ./os-base/nix.nix
+      ./os-base/pipewire.nix
+      ./os-base/pkgs.nix
+      ./os-base/services.nix
+      ./os-base/users.nix
       ./hw.nix
     ];
   in
@@ -24,10 +32,19 @@
     nixosConfigurations.pc = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = base_modules ++ [
+        ./hosts/pc/hostname.nix
+        ./hosts/pc/password.nix
         ./hosts/pc/boot.nix
         ./hosts/pc/zfs.nix
         ./hosts/pc/nvidia.nix
         lanzaboote.nixosModules.lanzaboote
+      ];
+    };
+    nixosConfigurations.nb = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = base_modules ++ [
+        ./hosts/nb/hostname.nix
+        ./hosts/pc/password.nix
       ];
     };
   };
