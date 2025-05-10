@@ -23,15 +23,6 @@
     alsa.support32Bit = true;
     pulse.enable = true;
   };
-  
-  #services.pipewire.wireplumber.extraConfig.bluetoothEnhancements = {
-  #  "monitor.bluez.properties" = {
-  #      "bluez5.enable-sbc-xq" = true;
-  #      "bluez5.enable-msbc" = true;
-  #      "bluez5.enable-hw-volume" = true;
-  #      "bluez5.roles" = [ "hsp_hs" "hsp_ag" "hfp_hf" "hfp_ag" ];
-  #  };
-  #};
 
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "ru_RU.UTF-8";
@@ -66,7 +57,11 @@
     };
   };
 
-  networking.nameservers = [ "127.0.0.1" ];
+  #networking.nameservers = [ "127.0.0.1" ];
+
+  environment.etc = {
+    "resolv.conf".text = "nameserver 127.0.0.1\n";
+  };
 
   users.users.shooter = {
     isNormalUser = true;
@@ -85,7 +80,7 @@
 
   services.openssh.enable = true;
 
-  networking.firewall.enable = false;
+  networking.firewall.enable = true;
 
   system.stateVersion = "24.11";
 
