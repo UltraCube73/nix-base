@@ -37,6 +37,7 @@
         ./hosts/pc/boot.nix
         ./hosts/pc/zfs.nix
         ./hosts/pc/nvidia.nix
+        ./hosts/pc/docker.nix
         lanzaboote.nixosModules.lanzaboote
       ];
     };
