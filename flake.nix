@@ -45,7 +45,7 @@
       system = "x86_64-linux";
       modules = base_modules ++ [
         ./hosts/nb/hostname.nix
-        ./hosts/pc/password.nix
+        ./hosts/nb/password.nix
       ];
     };
   };
