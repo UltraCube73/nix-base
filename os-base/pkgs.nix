@@ -4,6 +4,5 @@
     git
     home-manager
     gnumake
-    dig
   ];
 }
