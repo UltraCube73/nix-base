@@ -5,6 +5,7 @@
     ./hostname.nix
     ./nvidia.nix
     ./password.nix
+    ./steam.nix
     ./zfs.nix
   ];
 }
