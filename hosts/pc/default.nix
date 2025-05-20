@@ -6,6 +6,7 @@
     ./nvidia.nix
     ./password.nix
     ./steam.nix
+    ./unfree.nix
     ./zfs.nix
   ];
 }
