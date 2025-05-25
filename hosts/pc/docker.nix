@@ -14,6 +14,12 @@
         #  volumes = [ "mysql:/var/lib/mysql" ];
         #  environmentFiles = [ "/root/mysql.env" ];
         #};
+        postgres = {
+          image = "postgres:17.5";
+          ports = [ 5432:5432 ];
+          volumes = [ "postgres:/var/lib/postgresql/data" ];
+          environmentFiles = [ "/root/postgres.env" ];
+        };
       };
     };
   };
