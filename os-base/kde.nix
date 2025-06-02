@@ -5,5 +5,4 @@
     xkb.options = "grp:alt_shift_toggle";
   };
   services.desktopManager.plasma6.enable = true;
-  services.displayManager.sddm.enable = true;
 }

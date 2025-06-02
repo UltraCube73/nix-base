@@ -1,5 +1,6 @@
 {
   imports = [
+    ./sddm/sddm.nix
     ./bluetooth.nix
     ./boot.nix
     ./i18n.nix
