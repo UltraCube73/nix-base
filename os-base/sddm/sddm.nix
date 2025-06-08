@@ -1,7 +1,7 @@
 { pkgs, lib, ... }:
 let
   background-package = pkgs.stdenvNoCC.mkDerivation {
-    name = "background-image";
+    name = "sddm-wallpaper";
     src = ./.;
     dontUnpack = true;
     installPhase = ''
