@@ -14,11 +14,6 @@
           volumes = [ "postgres:/var/lib/postgresql/data" ];
           environmentFiles = [ "/root/postgres.env" ];
         };
-        mssql = {
-          image = "mcr.microsoft.com/mssql/server:2022-latest";
-          ports = [ "1433:1433" ];
-          environmentFiles = [ "/root/mssql.env" ];
-        };
       };
     };
   };
