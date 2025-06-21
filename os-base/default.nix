@@ -9,6 +9,7 @@
     ./nix.nix
     ./pipewire.nix
     ./pkgs.nix
+    ./rutoken.nix
     ./services.nix
     ./users.nix
   ];
