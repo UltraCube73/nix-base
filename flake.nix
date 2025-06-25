@@ -19,6 +19,7 @@
     ];
   in {
     nixosConfigurations.base = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
       system = "x86_64-linux";
       modules = base_modules;
     };
@@ -31,6 +32,7 @@
       ];
     };
     nixosConfigurations.nb = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
       system = "x86_64-linux";
       modules = base_modules ++ [
         ./hosts/nb
