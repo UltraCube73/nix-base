@@ -5,11 +5,11 @@
     ./boot.nix
     ./i18n.nix
     ./kde.nix
-    ./network.nix
     ./nix.nix
     ./pipewire.nix
     ./pkgs.nix
     ./services.nix
+    ./tor.nix
     ./users.nix
   ];
 }

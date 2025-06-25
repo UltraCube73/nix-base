@@ -180,7 +180,8 @@
       "inputs": {
         "home-manager": "home-manager",
         "lanzaboote": "lanzaboote",
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": "nixpkgs_2",
+        "torbridges": "torbridges"
       }
     },
     "rust-overlay": {
@@ -201,6 +202,23 @@
       "original": {
         "owner": "oxalica",
         "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "torbridges": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1750608062,
+        "narHash": "sha256-4YJEdewVNSm4UavM7byYOOPcm087cPXwv3FHY5si7sw=",
+        "owner": "scriptzteam",
+        "repo": "Tor-Bridges-Collector",
+        "rev": "10b8466014cd16f854ba5680b726a7c00af20268",
+        "type": "github"
+      },
+      "original": {
+        "owner": "scriptzteam",
+        "ref": "main",
+        "repo": "Tor-Bridges-Collector",
         "type": "github"
       }
     }
