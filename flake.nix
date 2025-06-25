@@ -12,7 +12,7 @@
   let
     base_modules = [
       ./os-base
-      ./hw.nix
+      ./hardware-configuration.nix
     ];
   in {
     nixosConfigurations.base = nixpkgs.lib.nixosSystem {
