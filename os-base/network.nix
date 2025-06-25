@@ -4,13 +4,8 @@
 
   services.tor = {
     enable = true;
-    client = {
-      enable = true;
-      dns.enable = true;
-    };
-    openFirewall = true;
+    client.enable = true;
     settings = {
-      ControlPort = 9051;
       UseBridges = true;
       ClientTransportPlugin = "obfs4 exec ${pkgs.obfs4}/bin/lyrebird";
       Bridge = [
@@ -23,12 +18,7 @@
         "obfs4 146.59.116.226:50845 DA91DE63966E03676A9994BDB7A18D1DCE2FAF10 cert=IAur+EwfAIbdC8jy+Mi9xlmh5ouL577Ya6ygJBEChWS8lNiEfy3hU/IAvDZ5Ntw/w2Oidg iat-mode=0"
         "obfs4 51.68.237.122:30839 708208F4631469FB59B8957AD3D01F8E3B6FEF7A cert=kDJk2ux6zItpRvs9ugTQqWl1W8pc8vO3PiiRFZ7kcHFghRUphK/2uq4xCnbS7bjBx3VcTw iat-mode=0"
       ];
-      DNSPort = [ { addr = "127.0.0.1"; port = 53; } ];
     };
-  };
-
-  environment.etc = {
-    "resolv.conf".text = "nameserver 127.0.0.1\n";
   };
 
   networking.firewall.enable = true;

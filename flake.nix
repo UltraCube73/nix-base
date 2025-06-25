@@ -14,8 +14,7 @@
       ./os-base
       ./hw.nix
     ];
-  in
-  {
+  in {
     nixosConfigurations.base = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = base_modules;
