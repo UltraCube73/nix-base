@@ -136,11 +136,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1750622754,
-        "narHash": "sha256-kMhs+YzV4vPGfuTpD3mwzibWUE6jotw5Al2wczI0Pv8=",
+        "lastModified": 1750838302,
+        "narHash": "sha256-aVkL3/yu50oQzi2YuKo0ceiCypVZpZXYd2P2p1FMJM4=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "c7ab75210cb8cb16ddd8f290755d9558edde7ee1",
+        "rev": "7284e2decc982b81a296ab35aa46e804baaa1cfe",
         "type": "github"
       },
       "original": {
@@ -180,8 +180,7 @@
       "inputs": {
         "home-manager": "home-manager",
         "lanzaboote": "lanzaboote",
-        "nixpkgs": "nixpkgs_2",
-        "torbridges": "torbridges"
+        "nixpkgs": "nixpkgs_2"
       }
     },
     "rust-overlay": {
@@ -202,23 +201,6 @@
       "original": {
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "type": "github"
-      }
-    },
-    "torbridges": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1750608062,
-        "narHash": "sha256-4YJEdewVNSm4UavM7byYOOPcm087cPXwv3FHY5si7sw=",
-        "owner": "scriptzteam",
-        "repo": "Tor-Bridges-Collector",
-        "rev": "10b8466014cd16f854ba5680b726a7c00af20268",
-        "type": "github"
-      },
-      "original": {
-        "owner": "scriptzteam",
-        "ref": "main",
-        "repo": "Tor-Bridges-Collector",
         "type": "github"
       }
     }
