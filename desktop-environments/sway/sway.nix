@@ -1,9 +1,9 @@
 { pkgs, ... }:
 {
-  environment.systemPackages = with pkgs; [
-    wl-clipboard
-    mako
-  ];
+  #environment.systemPackages = with pkgs; [
+  #  wl-clipboard
+  #  mako
+  #];
 
   programs.sway = {
     enable = true;

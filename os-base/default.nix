@@ -1,10 +1,9 @@
 {
   imports = [
-    ./sddm/sddm.nix
+    ./sddm.nix
     ./bluetooth.nix
     ./boot.nix
     ./i18n.nix
-    ./kde.nix
     ./nix.nix
     ./pipewire.nix
     ./pkgs.nix

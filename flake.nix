@@ -22,6 +22,7 @@
       system = "x86_64-linux";
       modules = base_modules ++ [
         ./hosts/pc
+        ./desktop-environments/sway
         lanzaboote.nixosModules.lanzaboote
       ];
     };
@@ -29,6 +30,7 @@
       system = "x86_64-linux";
       modules = base_modules ++ [
         ./hosts/nb
+        ./desktop-environments/kde
       ];
     };
   };

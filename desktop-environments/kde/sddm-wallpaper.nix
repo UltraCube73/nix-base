@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ pkgs, ... }:
 let
   background-package = pkgs.stdenvNoCC.mkDerivation {
     name = "sddm-wallpaper";
@@ -10,12 +10,6 @@ let
   };
 in
 {
-  services.displayManager.sddm = {
-    enable = lib.mkDefault true;
-    theme = "breeze";
-    wayland.enable = true;
-  };
-
   environment.systemPackages = [
     (
       pkgs.writeTextDir "share/sddm/themes/breeze/theme.conf.user" ''

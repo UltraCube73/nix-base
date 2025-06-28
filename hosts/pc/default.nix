@@ -7,7 +7,6 @@
     ./nvidia.nix
     ./password.nix
     ./steam.nix
-    ./sway.nix
     ./unfree.nix
     ./zfs.nix
   ];
