@@ -1,10 +1,5 @@
 { pkgs, ... }:
 {
-  #environment.systemPackages = with pkgs; [
-  #  wl-clipboard
-  #  mako
-  #];
-
   programs.sway = {
     enable = true;
     extraOptions = [
@@ -12,4 +7,6 @@
     ];
     wrapperFeatures.gtk = true;
   };
+
+  services.gvfs.enable = true;
 }

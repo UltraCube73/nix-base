@@ -1,8 +1,11 @@
-{ lib, ... }:
+{ pkgs, lib, ... }:
 {
+  #environment.systemPackages = with pkgs; [
+  #  kdePackages.breeze
+  #];
   services.displayManager.sddm = {
     enable = true;
-    theme = "breeze";
+    # theme = lib.mkDefault "breeze";
     wayland.enable = true;
   };
 }
