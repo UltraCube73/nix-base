@@ -1,6 +1,6 @@
 {
   imports = [
-    #./sddm-wallpaper.nix
+    ./sddm.nix
     ./sway.nix
   ];
 }
