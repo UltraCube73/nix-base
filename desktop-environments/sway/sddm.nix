@@ -23,19 +23,8 @@ let
   };
 in
 {
-  #environment.systemPackages = with pkgs; [
-  #  sddm-theme
-  #];
   services.displayManager.sddm = {
     theme = "${sddm-theme}";
     extraPackages = [ pkgs.libsForQt5.qt5.qtgraphicaleffects ];
   };
-  #environment.systemPackages = [
-  #  (
-  #    pkgs.writeTextDir "share/sddm/themes/breeze/theme.conf.user" ''
-  #      [General]
-  #      background = ${background-package}
-  #    ''
-  #  )
-  #];
 }

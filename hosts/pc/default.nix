@@ -6,6 +6,7 @@
     ./hostname.nix
     ./nvidia.nix
     ./password.nix
+    ./sddm-weston.nix
     ./steam.nix
     ./unfree.nix
     ./zfs.nix
