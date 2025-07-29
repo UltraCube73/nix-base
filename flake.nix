@@ -30,7 +30,7 @@
       system = "x86_64-linux";
       modules = base_modules ++ [
         ./hosts/nb
-        ./desktop-environments/kde
+        ./desktop-environments/sway
       ];
     };
   };

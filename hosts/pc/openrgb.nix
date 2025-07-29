@@ -17,6 +17,18 @@ let
       # sed -i -e "s+/usr/bin/env/+${pkgs.coreutils}/bin/env+g" $out/lib/udev/rules.d/60-openrgb.rules
       make install
     '';
+    buildInputs = with pkgs; [
+      pipewire
+      openal
+      libusb1
+      hidapi
+      mbedtls_2
+    ]
+    ++ (with libsForQt5; [
+      qtbase
+      qttools
+      qtwayland
+    ]);
   });
 in {
   services.hardware.openrgb = {
