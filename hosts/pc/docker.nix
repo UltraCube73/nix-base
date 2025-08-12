@@ -9,19 +9,10 @@
     oci-containers = {
       backend = "docker";
       containers = {
-        localai = {
-          image = "localai/localai:latest-gpu-nvidia-cuda-12";
+        rsshub = {
+          image = "diygod/rsshub";
           ports = [
-            "127.0.0.1:8080:8080"
-          ];
-          extraOptions = [
-            "--device=nvidia.com/gpu=all"
-          ];
-          cmd = [
-            "--p2p"
-          ];
-          volumes = [
-            "localai:/models"
+            "127.0.0.1:1200:1200"
           ];
         };
       };

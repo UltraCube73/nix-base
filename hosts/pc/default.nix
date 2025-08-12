@@ -1,6 +1,5 @@
 {
   imports = [
-    ./amnezia.nix
     ./boot.nix
     #./dns.nix
     ./docker.nix
@@ -11,6 +10,7 @@
     ./sddm-weston.nix
     ./steam.nix
     ./unfree.nix
+    ./vpn.nix
     ./zfs.nix
   ];
 }

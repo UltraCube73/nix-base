@@ -18,7 +18,6 @@ let
       make install
     '';
     buildInputs = with pkgs; [
-      pipewire
       openal
       libusb1
       hidapi
@@ -33,7 +32,7 @@ let
 in {
   services.hardware.openrgb = {
     enable = true;
-    package = openrgb-experimental; 
+    package = openrgb-experimental;
     server.port = 6742;
   };
 }
