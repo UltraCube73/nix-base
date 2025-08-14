@@ -9,4 +9,9 @@
   networking.firewall.enable = true;
 
   services.journald.extraConfig = "SystemMaxUse=256M";
+
+  virtualisation = {
+    docker.enable = true;
+    oci-containers.backend = "docker";
+  };
 }

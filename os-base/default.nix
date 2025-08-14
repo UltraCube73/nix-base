@@ -10,5 +10,6 @@
     ./services.nix
     ./tor.nix
     ./users.nix
+    ./vpn.nix
   ];
 }

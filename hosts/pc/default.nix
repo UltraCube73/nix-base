@@ -1,8 +1,6 @@
 {
   imports = [
     ./boot.nix
-    #./dns.nix
-    ./docker.nix
     ./hostname.nix
     ./nvidia.nix
     ./openrgb.nix
@@ -10,7 +8,7 @@
     ./sddm-weston.nix
     ./steam.nix
     ./unfree.nix
-    ./vpn.nix
+    ./virtualisation.nix
     ./zfs.nix
   ];
 }
